@@ -1,0 +1,14 @@
+INSERT INTO `Weapon` (`id`, `description`) VALUES (1,"UNARMED");
+INSERT INTO `Weapon` (`id`, `description`) VALUES (11,"FIREARM");
+INSERT INTO `Weapon` (`id`, `description`) VALUES (12,"HANDGUN");
+INSERT INTO `Weapon` (`id`, `description`) VALUES (13,"RIFLE");
+INSERT INTO `Weapon` (`id`, `description`) VALUES (14,"SHOTGUN");
+INSERT INTO `Weapon` (`id`, `description`) VALUES (17,"CLUB/BLACKJACK/BRASS KNUCKLES");
+INSERT INTO `Weapon` (`id`, `description`) VALUES (18,"HANDTOOL(HAMMER,SCREWDRIVER..)");
+INSERT INTO `Weapon` (`id`, `description`) VALUES (25,"LIGATURE (ROPE, WIRE, ETC)");
+INSERT INTO `Weapon` (`id`, `description`) VALUES (30,"BLUNT OBJECT");
+INSERT INTO `Weapon` (`id`, `description`) VALUES (40,"PERSONAL WEAPONS(HANDS,FEET..)");
+INSERT INTO `Weapon` (`id`, `description`) VALUES (82,"SHARP OBJECT");
+INSERT INTO `Weapon` (`id`, `description`) VALUES (90,"OTHER WEAPON");
+INSERT INTO `Weapon` (`id`, `description`) VALUES (95,"UNKNOWN WEAPON");
+INSERT INTO `Weapon` (`id`, `description`) VALUES (99,"NONE");

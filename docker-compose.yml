@@ -1,0 +1,45 @@
+version: '3'
+
+services:
+  mysql:
+    image: mysql:latest
+    container_name: db-crimewatch
+    environment:
+      MYSQL_ROOT_PASSWORD: chambanaguild
+      MYSQL_DATABASE: CrimeGuard
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./migrations:/docker-entrypoint-initdb.d/
+      # - db_data:/var/lib/mysql
+    networks:
+      - node-network
+
+  backend:
+    build:
+      context: ./backend/
+    container_name: api-crimewatch
+
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/usr/src/app
+    environment:
+      NODE_ENV: development   
+      DB_HOST: db-crimewatch
+      DB_USER: root
+      DB_PASSWORD: chambanaguild
+      DB_DATABASE: CrimeGuard
+    depends_on:
+      - mysql
+    command: bash -c 'sleep 20; npm run start:dev'
+    links:
+      - mysql
+    networks:
+      - node-network
+# volumes:
+#   db_data:
+
+networks:
+  node-network:
+    driver: bridge

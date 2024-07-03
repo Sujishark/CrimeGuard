@@ -1,0 +1,2 @@
+id,mapping_address,location,timestamp_reported,crime_code,place_code,reported_by
+1,"1 LINCOLN AVE ,URBANA,IL",POINT(40.1347341 -88.2196464),2002-12-12 13:55:00,6601,304,1

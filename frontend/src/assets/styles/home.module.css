@@ -1,0 +1,90 @@
+.bottomTab {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.logo {
+    position: fixed;
+    top: 10px;
+    z-index: 100;
+    right:-10px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.activityTabContainer {
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    z-index: 100;
+    width:30vw;
+    /* height:400px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.activityTabHeader {
+    /* position: fixed; */
+    /* overflow: hidden; */
+    /* top: 100px;
+    left:10px; */
+    width: 35%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.activityTab {
+    /* position: fixed; */
+    overflow: hidden;
+    /* top: 100px;
+    left:10px; */
+    /* z-index: 100; */
+    width: 35%;
+    height: 70%;
+    overflow: scroll;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.topSlider {
+    position: fixed;
+    overflow: hidden;
+    top: 60px;
+    z-index: 100;
+    width: 100%;
+    background-color: 'white';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topSliderData {
+    position: fixed;
+    overflow: hidden;
+    top: 110px;
+    z-index: 100;
+    width: 100%;
+    background-color: 'white';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonList {
+    position: fixed;
+    overflow: hidden;
+    top: 10px;
+    z-index: 100;
+    width: 100%;
+    padding:2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
